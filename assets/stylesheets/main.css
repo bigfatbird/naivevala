@@ -3,11 +3,12 @@
   padding: 0;
   box-sizing: border-box;
   font-size: 
-
 }
 
 body {
   font-size: 0.94em;
+  color: #010a23;
+  background-color: #f4f7d7;
 }
 
 nav {
@@ -32,4 +33,9 @@ p {
 .main {
   margin: 0 auto;
   max-width: 600px;
+}
+
+.snippet {
+  font-family: mono;
+  font-size: 0.9em;
 }
