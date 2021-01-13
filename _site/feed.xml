@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-01-13T14:50:12+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Your awesome title</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">Setup and getting to know elementary OS</title><link href="http://localhost:4000/jekyll/update/2021/01/12/test.html" rel="alternate" type="text/html" title="Setup and getting to know elementary OS" /><published>2021-01-12T19:45:50+01:00</published><updated>2021-01-12T19:45:50+01:00</updated><id>http://localhost:4000/jekyll/update/2021/01/12/test</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2021/01/12/test.html">&lt;p&gt;Disclaimer: This guide assumes you have no previous programming
+experience. If you have programmed in Java or C# before, chances are
+this guide is not what you need. You may find chapters or some code
+examples helpful, though.&lt;/p&gt;
+
+&lt;p&gt;This guide is also not done yet and it is probably filled with quirks
+and bad practises. I just started to learn Vala and programming for
+&lt;a href=&quot;https://elementary.io&quot;&gt;elementary OS&lt;/a&gt; and am using this
+right now as a journal to document what I learned and also am d
+ocumenting it for people who are in the same situation.
+With more practise I am going to turn this into a more serious beginner
+guide, but we are far from that.&lt;/p&gt;
+
+&lt;p&gt;Now you are sitting there, with your new elementary OS 5.1 Hera installation being done and you probably wonder: &lt;em&gt;“What now?”&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Well. Actually there is not much to do. You can use your elementary installation as you would use any other operating system you might have previously used, like writing, drawing, gaming and so on.&lt;/p&gt;
+
+&lt;p&gt;elementary comes with the ability to download and install new software. It’s really easy to install one of your favorites apps from within AppCenter. To do this you can fire up the slingshot launcher (To do this hit &lt;span class=&quot;snippet&quot;&gt;⌘ + SPACE&lt;/span&gt;; The ⌘-Symbol can be easily spotted on your Keyboard if you are using a Apple Computer and most likely is the Windows Button on any other computer you use) and you will be presented with a box full of more icons that you can browse or search with the searchbar hovering on top of this icon list.&lt;/p&gt;
+
+&lt;p&gt;Once you’ve found AppCenter you can click it’s button and a store will be launched where you can find a gazillion of new and shiny apps. That is also the place where you can get updates to elementary OS and the apps your past self has installed on your computer.&lt;/p&gt;
+
+&lt;p&gt;elementary OS will tell you from time to time to install software updates. You should do this, as you benefit from new features that are about to be shipped to your machine.&lt;/p&gt;
+
+&lt;p&gt;After you are done examining your new shiny tools we can have a look at your operating system from another point of view and start setting up our basic programming environment.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-terminal&quot;&gt;The Terminal&lt;/h2&gt;
+
+&lt;p&gt;You’ve probably seen some hollywood movie or a tv-series where there was a computer programmer and she was asked to hack into some bank account or try to brute force some government system. The IT-guy most probably used an application with a lot of confusing white text on some black ground. Sometimes it’s also green or blue on black, but most often the audience of the movie has no clue what is going on.&lt;/p&gt;
+
+&lt;p&gt;The hard fact is that most of the actors also don’t have an idea what they are doing there and the producers of the movie just use some linux or unix commands running in a terminal application and showing code snippets of open source software. It’s actually also someones job to produce entire fictional user interface elements and gui like applications to fake the effects for the audience.&lt;/p&gt;
+
+&lt;p&gt;But what if I told you, you could be that movie hacker, too?
+Surely we are going to approaching this from a more results-oriented perspective, but we can still get some fascinating results in the next few minutes and you could tell your friends that you are a mighty computer hacker now and impress them a lot.&lt;/p&gt;
+
+&lt;p&gt;We will make heavy use of the terminal app within this course. Don’t be afraid. It is actually more easy than you might think.
+Many people are getting intimidated just by the look of an application like the terminal but they were the way to interact with computers just a few decades ago and as they are so useful for some tasks they still remained a part of our computers, hidden deep inside our now standard user interfaces.&lt;/p&gt;
+
+&lt;p&gt;Remember the slingshot interface you can launch with hitting ⌘ + SPACE?
+You should do this now and search for the Terminal app. With a right click on the app icon you can get a dialogue to add it to your Dock at the bottom of your screen, or you can just Drag’n’Drop it there. While we are at it you can do the same for the Files App and the Code App. We will have a look at them later.&lt;/p&gt;
+
+&lt;p&gt;I put those three Apps to the left side of my Dock and I recommend you do the same, as it is just so convenient to launch them from there.&lt;/p&gt;
+
+&lt;p&gt;Now lets launch the Terminal App. You should be presented with a black window, and just one line of text that looks almost like this:&lt;/p&gt;
+
+&lt;div class=&quot;terminal&quot;&gt;
+marco@laptop:~$
+&lt;/div&gt;
+
+&lt;p&gt;Behind it you will find a blinking cursor begging for your input. How about we fulfill its demands?&lt;/p&gt;
+
+&lt;p&gt;Type this (and don’t copy and paste) line into your Terminal window:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'Hello. This is an example'&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;and hit ENTER.&lt;/p&gt;
+
+&lt;p&gt;The code you’ve just entered tells your computer to repeat whatever you’ve put between the two ‘. After the computer is done with it you will be returned to the line you begin this adventure at and you can enter more commands.
+There are many terminal commands that we can use, some of them have their counterparts implemented within the graphical user interface, some of them are more accessible with the help of the Terminal. Don’t worry, after you’ve typed them several hundred times you’ll get the hang of it. You can always discover new programs in Terminal and there is a lot to learn.&lt;/p&gt;
+
+&lt;p&gt;The echo command for example comes with a variety of options. You can find a user manual of it if you enter this line.&lt;/p&gt;
+
+&lt;p&gt;man echo&lt;/p&gt;
+
+&lt;p&gt;This will present you with a screen where the different options on how to use the echo program are described. To exit this page just hit the Q-Key and you come back to the normal Terminal view.&lt;/p&gt;</content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html">Disclaimer: This guide assumes you have no previous programming experience. If you have programmed in Java or C# before, chances are this guide is not what you need. You may find chapters or some code examples helpful, though.</summary></entry><entry><title type="html">Welcome to Jekyll!</title><link href="http://localhost:4000/jekyll/update/2021/01/12/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2021-01-12T19:45:50+01:00</published><updated>2021-01-12T19:45:50+01:00</updated><id>http://localhost:4000/jekyll/update/2021/01/12/welcome-to-jekyll</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2021/01/12/welcome-to-jekyll.html">&lt;p&gt;You’ll find this post in your &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
+
+&lt;p&gt;Jekyll requires blog post files to be named according to the following format:&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;YEAR-MONTH-DAY-title.MARKUP&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Where &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;YEAR&lt;/code&gt; is a four-digit number, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;MONTH&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;DAY&lt;/code&gt; are both two-digit numbers, and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;MARKUP&lt;/code&gt; is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
+
+&lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Tom'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints 'Hi, Tom' to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Check out the &lt;a href=&quot;https://jekyllrb.com/docs/home&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://talk.jekyllrb.com/&quot;&gt;Jekyll Talk&lt;/a&gt;.&lt;/p&gt;</content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html">You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.</summary></entry></feed>
