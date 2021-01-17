@@ -16,6 +16,10 @@ img { max-width: 100%; height: auto; }
 
 .hero p { font-size: 24px; }
 
+p { margin: 0 auto; font-family: Inter,Helvetica,Roboto,sans-serif; }
+
+h1 { font-family: Inter,Helvetica,Roboto,sans-serif; }
+
 .post-content { margin: 0 auto; padding-bottom: 200px; }
 
 .post-content h1 { color: #a14a4a; }
@@ -29,6 +33,10 @@ img { max-width: 100%; height: auto; }
 .terminal { background-color: rgba(37, 46, 50, 0.95); color: #859900; }
 
 .footer { height: 40px; color: #fff; text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3); background-color: #9c9c9c; }
+
+.main { display: flex; flex-direction: column; align-items: center; justify-content: center; width: 900px; margin: 0 auto; padding: 20px; }
+
+.chapter-list { padding: 20px; }
 
 .highlight table td { padding: 5px; }
 
