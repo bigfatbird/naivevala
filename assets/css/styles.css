@@ -20,7 +20,7 @@ p { margin: 0 auto; font-family: Inter,Helvetica,Roboto,sans-serif; }
 
 h1 { font-family: Inter,Helvetica,Roboto,sans-serif; }
 
-.post-content { margin: 0 auto; padding-bottom: 200px; }
+.post-content { width: 800px; margin: 0 auto; padding-bottom: 200px; }
 
 .post-content h1 { color: #a14a4a; }
 
