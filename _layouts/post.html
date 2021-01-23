@@ -1,0 +1,30 @@
+---
+layout: default
+---
+
+
+<div class="post-content">
+    <h1>{{ page.title }}</h1>
+    </p>
+
+        {{ content }}
+</div>
+<script>
+
+  let acc = document.getElementsByClassName("code-solution");
+  let i;
+
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      let panel = this.nextElementSibling;
+      if (panel.style.display === "block") {
+        panel.style.display = "none";
+      } else {
+        panel.style.display = "block";
+      }
+    });
+  }
+
+
+</script>
